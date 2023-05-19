@@ -1,7 +1,7 @@
 {% set cert = salt['vault'].read_secret('secret/certs/common/wildcard/sandbox3/tccenter.ru.crt') %}
 {% set key  = salt['vault'].read_secret('secret/certs/common/wildcard/sandbox3/tccenter.ru.key') %}
 
-/tmp/cert.crt:
+/tmp/sandbox-cert.crt:
   file.managed:
     - user: root
     - group: root
@@ -10,7 +10,7 @@
     - contents: "{{ cert.value|yaml|replace("'","") }}"
 
 
-/tmp/cert.key:
+/tmp/sandbox-cert.key:
   file.managed:
     - user: root
     - group: root
