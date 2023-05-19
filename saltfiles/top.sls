@@ -1,4 +1,4 @@
-base:
+sandbox:
   '*':
-    - base
+    - sandbox 
 
