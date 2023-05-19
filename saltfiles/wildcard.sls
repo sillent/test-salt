@@ -23,5 +23,5 @@ nginx:
     - enable: true
     - reload: true
     - watch:
-      - file: /tmp/cert.crt
-      - file: /tmp/cert.key
+      - file: /tmp/sandbox-cert.crt
+      - file: /tmp/sandbox-cert.key
