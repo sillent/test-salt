@@ -1,4 +1,5 @@
 sandbox:
   '*':
-    - sandbox 
-
+    - wildcard
+    - apply-wildcard
+    - testenv
